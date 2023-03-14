@@ -36,14 +36,12 @@ optional arguments:
   --url_file URL_FILE, -uf URL_FILE
                        list of urls
   --output OUTPUT, -o OUTPUT
-                       Output  in text form
-  --json               Output  in json form
-  --tables             Output  in table form
+                       Output in text form
+  --json               Output in json form
+  --tables             Output in table form
 
 
 Example: docker run --rm nucwrap -u scanme.nmap.org --json >> output.json
-         docker run --rm nucwrap -u scanme.nmap.org --tables
-         docker run --rm nucwrap -uf scanme.nmap.org --json 
 ```
 
 ## Using the Docker Container
