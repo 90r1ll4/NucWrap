@@ -82,6 +82,9 @@ def output_tables() -> object:
     """To convert the output into tables form"""
 
     json_data = output_json()
+    
+    if not json_data:
+        return None
 
     # definig structure for the tables
     nuclei_table = PrettyTable(["Template-Id", "Host" ,"Type", "severity"])
