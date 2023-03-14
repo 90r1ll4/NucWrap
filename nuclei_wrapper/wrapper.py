@@ -91,6 +91,6 @@ def output_tables() -> object:
 
     # to add data in file
     for table in range(len(json_data)):
-        nuclei_table.add_row(json_data[table]['template-id'], json_data[table]['host'], json_data[table]['type'], json_data[table]["info"]['severity']])
+        nuclei_table.add_row([json_data[table]['template-id'], json_data[table]['host'], json_data[table]['type'], json_data[table]["info"]['severity']])
 
     return nuclei_table
