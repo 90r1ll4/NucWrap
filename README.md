@@ -27,22 +27,21 @@ python3 main.py -h
 The output shown below are the latest supported commands.
 
 ```bash
-usage: python3 main.py [-h] [--url URL] [--url_file URL_FILE] [--output OUTPUT] [--json] [--tables]
+usage: main.py [-h] [--url] [--url_file] [--output] [--json] [--tables]
 
 Wrapper For Nuclei
 
-optional arguments:
-  -h, --help           show this help message and exit
-  --url URL, -u URL    url to scan
-  --url_file URL_FILE, --uf URL_FILE
-                       list of urls
-  --output OUTPUT, -o OUTPUT
-                       Output in text form
-  --json               Output in json form
-  --tables             Output in table form
+options:
+  -h, --help          show this help message and exit
 
+Wrapper Utility:
+  --url , -u          url to scan
+  --url_file , --uf   list of urls
+  --output , -o       Output in text form
+  --json              Output in json form
+  --tables            Output in table form
 
-Example: 
+Example: python3 main.py -u scanme.nmap.org --json --tables
 ```
 
 ## Installation with Docker
