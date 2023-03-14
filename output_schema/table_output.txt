@@ -1,27 +1,7 @@
- +-----------------------------------------------------+-------------------------------+---------------------------+------+----------+
-|                       Template                      |          Template-Id          |            Host           | Type | severity |
-+-----------------------------------------------------+-------------------------------+---------------------------+------+----------+
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-| misconfiguration/http-missing-security-headers.yaml | http-missing-security-headers | https://ginandjuice.shop/ | http |   info   |
-|              ssl/detect-ssl-issuer.yaml             |           ssl-issuer          |      ginandjuice.shop     | ssl  |   info   |
-|                ssl/ssl-dns-names.yaml               |         ssl-dns-names         |      ginandjuice.shop     | ssl  |   info   |
-|                 ssl/tls-version.yaml                |          tls-version          |      ginandjuice.shop     | ssl  |   info   |
-|           dns/nameserver-fingerprint.yaml           |     nameserver-fingerprint    |      ginandjuice.shop     | dns  |   info   |
-|               ssl/deprecated-tls.yaml               |         deprecated-tls        |      ginandjuice.shop     | ssl  |   info   |
-|               ssl/deprecated-tls.yaml               |         deprecated-tls        |      ginandjuice.shop     | ssl  |   info   |
-|               ssl/deprecated-tls.yaml               |         deprecated-tls        |      ginandjuice.shop     | ssl  |   info   |
-+-----------------------------------------------------+-------------------------------+---------------------------+------+----------+
+ +----------------+--------------------------+-----------------+---------+----------+
+|  Template-Id   |           Name           |       Host      |   Type  | severity |
++----------------+--------------------------+-----------------+---------+----------+
+| openssh-detect | OpenSSH Service - Detect | scanme.nmap.org | network |   info   |
++----------------+--------------------------+-----------------+---------+----------+
+| ftp-detect     |  FTP Service - Detect    | scanme.nmap.org | network |   info   |
++----------------+--------------------------+-----------------+---------+----------+
