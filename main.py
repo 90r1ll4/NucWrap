@@ -36,9 +36,9 @@ def arg_parser() -> object:
     nuclei_wrapper = parser.add_argument_group('Wrapper Utility')
     nuclei_wrapper.add_argument('--url','-u', metavar = '', help = 'url to scan')
     nuclei_wrapper.add_argument('--url_file','-uf', metavar = '', help = 'list of urls')
-    nuclei_wrapper.add_argument('--output','-o', metavar = '', help = 'Output file in text form')
-    nuclei_wrapper.add_argument('--json', action = 'store_true', help = 'Output file in json form')
-    nuclei_wrapper.add_argument('--tables', action = 'store_true', help = 'Output file in json form')
+    nuclei_wrapper.add_argument('--output','-o', metavar = '', help = 'Output in text form')
+    nuclei_wrapper.add_argument('--json', action = 'store_true', help = 'Output in json form')
+    nuclei_wrapper.add_argument('--tables', action = 'store_true', help = 'Output in table form')
     return parser.parse_args()
 
 
