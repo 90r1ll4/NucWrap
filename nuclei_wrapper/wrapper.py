@@ -87,7 +87,7 @@ def output_tables() -> object:
         return None
 
     # definig structure for the tables
-    nuclei_table = PrettyTable(["Template-Id", "Host" ,"Type", "severity"])
+    nuclei_table = PrettyTable(["Template-Id", "Name", "Host", "Type", "severity"])
 
     # to add data in file
     for table in range(len(json_data)):
