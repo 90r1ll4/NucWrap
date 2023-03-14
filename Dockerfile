@@ -3,12 +3,13 @@ FROM python:3.10-bullseye
 
 LABEL maintainer="Ashwin Singh <ashwinsinghsingh666672@gmail.com>"
 LABEL description="This tool acts as a wrapper for Nuclei and generates a formatted JSON output that can be loaded and tables."
+
 # Install required packages
 RUN apt-get update && \
     apt-get install -y python3.10 python3-pip git zip unzip
 
 # Install Nuclei
-# RUN go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+
 RUN wget https://dl.google.com/go/go1.20.linux-amd64.tar.gz && \
     tar -C /usr/local -xzf go1.20.linux-amd64.tar.gz
 
