@@ -3,37 +3,38 @@
 Nucwrap is a wrapper tool around the nuclei scanner which converts the output to a loadable format of JSON and table format.
 
 
-## Installation with Docker
-This tool can also be used with [Docker](https://www.docker.com/). To set up the Docker environment, follow these steps (trying using with sudo, if you get any error):
-
-```bash
-docker build -t nucwrap .
-```
 
 # Using the Nucwrap
+
+## Installation Through PIP
+To install dependencies, use the following command:
+
+```bash
+pip3 install -r requirements.txt
+```
 To use the Nucwrap, you can run it with the following command:
 ```bash
-python nucwrap.py -u example.com --json --tables
-python nucwrap.py -u example.com - o 
+python3 main.py -u example.com --json --tables
+python3 main.py -u example.com -o 
 ```
 
 For an overview of all commands use the following command:
 
 ```bash
-python nucwrap.py -h
+python3 main.py -h
 ```
 
 The output shown below are the latest supported commands.
 
 ```bash
-usage: python nucwrap.py [-h] [--url URL] [--url_file URL_FILE] [--output OUTPUT] [--json] [--tables]
+usage: python3 main.py [-h] [--url URL] [--url_file URL_FILE] [--output OUTPUT] [--json] [--tables]
 
 Wrapper For Nuclei
 
 optional arguments:
   -h, --help           show this help message and exit
   --url URL, -u URL    url to scan
-  --url_file URL_FILE, -uf URL_FILE
+  --url_file URL_FILE, --uf URL_FILE
                        list of urls
   --output OUTPUT, -o OUTPUT
                        Output in text form
@@ -41,7 +42,14 @@ optional arguments:
   --tables             Output in table form
 
 
-Example: docker run --rm nucwrap -u scanme.nmap.org --json >> output.json
+Example: 
+```
+
+## Installation with Docker
+This tool can also be used with [Docker](https://www.docker.com/). To set up the Docker environment, follow these steps (trying using with sudo, if you get any error):
+
+```bash
+docker build -t nucwrap .
 ```
 
 ## Using the Docker Container
