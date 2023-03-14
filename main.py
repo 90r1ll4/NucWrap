@@ -17,7 +17,6 @@ def nuclei_check() -> str:
         if e.returncode == 127:
             print(f"Command '{command}' not found.")
             return None
-
     except FileNotFoundError as e:
         print("Nuclei not found")
         return None
@@ -27,12 +26,12 @@ def nuclei_check() -> str:
     return True
 
 
-def arg_parser() -> object:
-
+def parser_argument() -> object:
+   
     """Wrapper for the Nuclei cli."""
 
-    # Parse  arguments
-    parser: ArgumentParser = ArgumentParser(description='Wrapper For Nuclei')
+    # Parse arguments
+    parser: ArgumentParser = ArgumentParser(description='Wrapper For Nuclei', epilog='python main.py -u scanme.nmap.org --json --tables')
     nuclei_wrapper = parser.add_argument_group('Wrapper Utility')
     nuclei_wrapper.add_argument('--url','-u', metavar = '', help = 'url to scan')
     nuclei_wrapper.add_argument('--url_file','-uf', metavar = '', help = 'list of urls')
@@ -44,7 +43,7 @@ def arg_parser() -> object:
 
 def main():
     
-    args = arg_parser()
+    args = parser_argument()
 
     #Checking if
     if nuclei_check():
