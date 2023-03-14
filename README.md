@@ -27,7 +27,8 @@ python3 main.py -h
 The output shown below are the latest supported commands.
 
 ```bash
-usage: main.py [-h] [--url] [--url_file] [--output] [--json] [--tables]
+usage: python3 main.py [-h] [--url] [--url_file] [--output] [--json]
+                       [--tables]
 
 Wrapper For Nuclei
 
@@ -42,6 +43,7 @@ Wrapper Utility:
   --tables            Output in table form
 
 Example: python3 main.py -u scanme.nmap.org --json --tables
+
 ```
 
 ## Installation with Docker
