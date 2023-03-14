@@ -45,7 +45,7 @@ def main():
     
     args = parser_argument()
 
-    #Checking if
+    #Checking if nuclei is installed or not
     if nuclei_check():
         result, tables = nuclei(args)
         if result:
